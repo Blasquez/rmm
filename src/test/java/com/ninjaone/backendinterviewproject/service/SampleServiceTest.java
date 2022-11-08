@@ -1,23 +1,11 @@
 package com.ninjaone.backendinterviewproject.service;
 
-import com.ninjaone.backendinterviewproject.database.SampleRepository;
-import com.ninjaone.backendinterviewproject.model.Sample;
-import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
-import org.mockito.InjectMocks;
-import org.mockito.Mock;
-import org.mockito.Mockito;
 import org.mockito.junit.jupiter.MockitoExtension;
-
-import java.util.Optional;
-
-import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.mockito.Mockito.*;
 
 @ExtendWith(MockitoExtension.class)
 public class SampleServiceTest {
-    public static final String ID = "12345";
+    /*public static final String ID = "12345";
 
     @Mock
     private SampleRepository sampleRepository;
@@ -25,18 +13,18 @@ public class SampleServiceTest {
     @InjectMocks
     private SampleService testObject;
 
-    private Sample sampleEntity;
+    private Device sampleEntity;
 
     @BeforeEach
     void setup(){
-        sampleEntity = new Sample(ID, "value");
+        sampleEntity = new Device(ID, "value");
     }
 
     @Test
     void getSampleData() {
         when(sampleRepository.findById(ID)).thenReturn(Optional.of(sampleEntity));
-        Optional<Sample> sampleEntityOptional = testObject.getSampleEntity(ID);
-        Sample actualEntity = sampleEntityOptional.orElse(null);
+        Optional<Device> sampleEntityOptional = testObject.getSampleEntity(ID);
+        Device actualEntity = sampleEntityOptional.orElse(null);
         assert actualEntity != null;
         assertEquals(sampleEntity.getValue(), actualEntity.getValue());
     }
@@ -53,4 +41,5 @@ public class SampleServiceTest {
         testObject.deleteSampleEntity(ID);
         Mockito.verify(sampleRepository, times(1)).deleteById(ID);
     }
+    */
 }
